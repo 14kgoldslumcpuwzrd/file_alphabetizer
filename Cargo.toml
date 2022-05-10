@@ -6,6 +6,9 @@ authors = ["A'shaun Thomas"]
 description = "An executable that alphabetizes an entire file."
 keywords = ["alphabitizer", "alphabetize", "file", "file-alphabetizer"]
 license = "MIT OR Apache-2.0"
+homepage = "https://github.com/14kgoldslumcpuwzrd/file_alphabetizer"
+documentation = "https://github.com/14kgoldslumcpuwzrd/file_alphabetizer/blob/master/README.md"
+repository = "https://github.com/14kgoldslumcpuwzrd/file_alphabetizer"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

@@ -2,7 +2,7 @@
 name = "file_alphabetizer"
 version = "0.1.0"
 edition = "2021"
-authors = "A'Shaun Thomas"
+authors = ["Ashaun Thomas"]
 description = "An executable that alphabetizes an entire file."
 keywords = ["alphabitizer", "alphabetize", "file", "file-alphabetizer"]
 license = "MIT OR Apache-2.0"

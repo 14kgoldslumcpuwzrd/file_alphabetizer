@@ -1,20 +1,16 @@
 use std::fs;
-use std::env;
+use clap::Parser;
+use file_alphabetizer::lib;
+
 fn main() {
-    let args: Vec<String> = env::args().collect();
 
-    let file = &args[1];
+    let args: lib::CLI = lib::CLI::parse();
+    let file = &args.filepath;
+    let content: String = lib::get_content(&args.filepath);
+    let mut word_collection: Vec<&str> = lib::split(&content);
 
-    println!("In file {}", file);
-
-    let contents = fs::read_to_string(file)
-        .expect("Something went wrong reading the file");
-
-    let mut word_collection: Vec<&str> = contents.split(" ").collect();
-    println!("{:?}", word_collection);
-
-    // Implement merge sort
     word_collection.sort_by(|a, b| a.to_lowercase().cmp(&b.to_lowercase()));
 
     fs::write(file, word_collection.join(" ")).expect("error within file reconstruction");
 }
+

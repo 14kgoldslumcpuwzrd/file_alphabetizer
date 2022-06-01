@@ -25,4 +25,4 @@ An library that alphabetizes a given file. Can be used as a crate in your own ap
 
 
 **As a CLI tool**
-Run `cargo run` from the command line, within the project's directory.
+1. Run `cargo run` from the command line, within the project's directory.

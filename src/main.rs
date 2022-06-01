@@ -1,16 +1,11 @@
-use std::fs;
+use std::{path::PathBuf};
 use clap::Parser;
-use file_alphabetizer::lib;
+use file_alphabetizer::CLI;
 
+#[warn(unused_must_use)]
 fn main() {
-
-    let args: lib::CLI = lib::CLI::parse();
-    let file = &args.filepath;
-    let content: String = lib::get_content(&args.filepath);
-    let mut word_collection: Vec<&str> = lib::split(&content);
-
-    word_collection.sort_by(|a, b| a.to_lowercase().cmp(&b.to_lowercase()));
-
-    fs::write(file, word_collection.join(" ")).expect("error within file reconstruction");
+    let args: CLI = CLI::parse();
+    let p = PathBuf::from(args.filepath);
+    file_alphabetizer::alphabetize(&p).unwrap();
 }
 

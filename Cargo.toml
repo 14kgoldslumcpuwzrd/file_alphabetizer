@@ -14,3 +14,4 @@ repository = "https://github.com/14kgoldslumcpuwzrd/file_alphabetizer"
 
 [dependencies]
 clap = { version = "3.0", features = ["derive"] }
+anyhow = "1.0"

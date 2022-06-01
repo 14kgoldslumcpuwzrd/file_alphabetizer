@@ -6,19 +6,19 @@ An library that alphabetizes a given file. Can be used as a crate in your own ap
 ## Usage
 
 **Within a Rust project**
-    1. Import the library into your Cargo.toml like so:
-    
-        [dependencies] 
-            file_alphabetizer = "1.0"`
+1. Import the library into your Cargo.toml like so:
 
-    2. Import the crate and use the alphabetize method, like so.
-        (Currently, path starts at parent directory of code calling it)
+    [dependencies] 
+        file_alphabetizer = "1.0"`
 
-            use std::{path::PathBuf};
-            use file_alphabetizer;
+2. Import the crate and use the alphabetize method, like so.
+    (Currently, path starts at parent directory of code calling it)
 
-            let path = PathBuf::from("src/test");
-            file_alphabetizer::alphabetize(&path).unwrap();
+        use std::{path::PathBuf};
+        use file_alphabetizer;
+
+        let path = PathBuf::from("src/test");
+        file_alphabetizer::alphabetize(&path).unwrap();
 
 
 **As a CLI tool**

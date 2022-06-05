@@ -11,7 +11,7 @@ A library that alphabetizes a given file. Can be used as a crate in your own app
 1. Import the library into your Cargo.toml like so:
     ```Rust
     [dependencies] 
-        file_alphabetizer = "1.0"
+        file_alphabetizer = "2.0"
     ```
 2. Import the crate and use the alphabetize method, like so.
     (Currently, path starts at parent directory of code calling it):

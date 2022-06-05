@@ -1,20 +1,15 @@
-    use clap::{Parser, Error};
+
+    use clap::{Error};
     use std::fs;
     use std::path::PathBuf;
     use anyhow::{ Result, Context };
 
-    #[derive(Parser)]
-    pub struct CLI {
-        #[clap(parse(from_os_str))]
-        pub filepath: std::path::PathBuf
-    }
-
-    pub fn get_content(filepath: &PathBuf) -> Result<String> {
+    fn get_content(filepath: &PathBuf) -> Result<String> {
         let s = fs::read_to_string(filepath).with_context(|| format!("File not found: {:?}", filepath));
         s
     }
     
-    pub fn split(content: &String) -> Vec<&str>  {
+    fn split(content: &String) -> Vec<&str>  {
         content.split(" ").collect()
     }
 

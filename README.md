@@ -23,6 +23,20 @@ A library that alphabetizes a given file. Can be used as a crate in your own app
         }
     ```
 
+## Crate Features
+
+file_alphabetizer sorts non-case-sensitive alphabetical order.
+- Special characters such as brackets are placed after the alphabet
+- Numbers are placed before alphabet
+
 
 **As a CLI tool**
 1. Run `cargo run` from the command line, within the project's directory.
+
+# License
+
+Rand is distributed under the terms of both the MIT license and the
+Apache License (Version 2.0).
+
+See [LICENSE-APACHE](LICENSE-APACHE) and [LICENSE-MIT](LICENSE-MIT), and
+[COPYRIGHT](COPYRIGHT) for details.

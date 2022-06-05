@@ -14,6 +14,18 @@
     }
 
     /// Alphabetizes a file given a valid file path.
+    /// 
+    /// # Examples
+    /// 
+    /// Basic usage:
+    /// 
+    /// ```
+    /// use std::{ path::PathBuf };
+    /// 
+    /// let p = PathBuf::from("src/someFileName");
+    /// file_alphabetizer::alphabetize(&p).unwrap();
+    /// 
+    /// ```
     pub fn alphabetize(filepath: &PathBuf) -> Result<(), Error>  {
         let content: String = get_content(filepath).unwrap();
         let mut word_collection: Vec<&str> = split(&content);

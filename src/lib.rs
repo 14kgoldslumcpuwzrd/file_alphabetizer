@@ -1,6 +1,6 @@
 //! A library that alphabetizes a given file.
 use clap::{Error};
-use std::fs;
+use std::{fs};
 use std::path::PathBuf;
 use anyhow::{ Result, Context };
 
@@ -46,6 +46,12 @@ fn  should_return_error_if_file_doesnt_exist() {
 
 #[test]
 fn should_return_file_contents() {
+    use std::fs::File;
+    use std::io::Write;
+    
+    let mut file = File::create("src/test").unwrap();
+    let contents = String::from("this is a file");
+    file.write(contents.as_bytes()).unwrap();
     let file = PathBuf::from("src/test");
     assert_eq!(get_content(&file).unwrap(), "this is a file")
 }

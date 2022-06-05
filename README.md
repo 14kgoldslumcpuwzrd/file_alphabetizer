@@ -1,7 +1,7 @@
 ![Github CI](https://github.com/lasagnamassage/file_alphabetizer/actions/workflows/rust.yml/badge.svg)
 
 # file_alphabetizer
-An library that alphabetizes a given file. Can be used as a crate in your own applications or as a standalone binary
+A library that alphabetizes a given file. Can be used as a crate in your own applications or (soon) as a standalone binary
 
 ## Usage
 

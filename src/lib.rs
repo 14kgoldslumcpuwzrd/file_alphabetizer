@@ -1,4 +1,4 @@
-
+//! A library that alphabetizes a given file.
     use clap::{Error};
     use std::fs;
     use std::path::PathBuf;
@@ -13,6 +13,7 @@
         content.split(" ").collect()
     }
 
+    /// Alphabetizes a file given a valid file path.
     pub fn alphabetize(filepath: &PathBuf) -> Result<(), Error>  {
         let content: String = get_content(filepath).unwrap();
         let mut word_collection: Vec<&str> = split(&content);

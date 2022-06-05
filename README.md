@@ -1,4 +1,6 @@
 ![Github CI](https://github.com/lasagnamassage/file_alphabetizer/actions/workflows/rust.yml/badge.svg)
+[![Crate](https://img.shields.io/crates/v/file_alphabetizer.svg)](https://crates.io/crates/file_alphabetizer)
+[![API](https://docs.rs/file_alphabetizer/badge.svg)](https://docs.rs/file_alphabetizer)
 
 # file_alphabetizer
 A library that alphabetizes a given file. Can be used as a crate in your own applications or (soon) as a standalone binary

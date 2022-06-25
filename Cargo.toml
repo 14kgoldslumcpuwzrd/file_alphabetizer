@@ -1,9 +1,9 @@
 [package]
 name = "file_alphabetizer"
-version = "2.0.0"
+version = "2.1.0"
 edition = "2021"
 authors = ["A'shaun Thomas ashaunthomas@siu.edu"]
-description = "An executable that alphabetizes an entire file."
+description = "A function that takes a file alphabetizes it."
 keywords = ["alphabetizer", "alphabetize", "file", "file-alphabetizer"]
 license = "MIT OR Apache-2.0"
 homepage = "https://github.com/14kgoldslumcpuwzrd/file_alphabetizer"

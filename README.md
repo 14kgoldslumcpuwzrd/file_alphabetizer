@@ -3,7 +3,7 @@
 [![API](https://docs.rs/file_alphabetizer/badge.svg)](https://docs.rs/file_alphabetizer)
 
 # file_alphabetizer
-A library that alphabetizes a given file. Can be used as a crate in your own applications or (soon) as a standalone binary
+A function that takes a file alphabetizes it.
 
 ## Usage
 
@@ -11,7 +11,7 @@ A library that alphabetizes a given file. Can be used as a crate in your own app
 1. Import the library into your Cargo.toml like so:
     ```Rust
     [dependencies] 
-        file_alphabetizer = "2.0"
+        file_alphabetizer = "2.1.0"
     ```
 2. Import the crate and use the alphabetize method, like so.
     (Currently, path starts at parent directory of code calling it):

@@ -14,4 +14,3 @@ fn main() {
     let p = PathBuf::from(args.filepath);
     file_alphabetizer::alphabetize(&p).unwrap();
 }
-

@@ -3,7 +3,7 @@
 [![API](https://docs.rs/file_alphabetizer/badge.svg)](https://docs.rs/file_alphabetizer)
 
 # file_alphabetizer
-A function that takes a file alphabetizes it.
+A function that takes a file and alphabetizes it.
 
 ## Usage
 

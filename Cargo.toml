@@ -1,6 +1,6 @@
 [package]
 name = "file_alphabetizer"
-version = "2.1.0"
+version = "2.1.1"
 edition = "2021"
 authors = ["A'shaun Thomas ashaunthomas@siu.edu"]
 description = "A function that takes a file alphabetizes it."

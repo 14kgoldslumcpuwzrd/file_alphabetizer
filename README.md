@@ -11,7 +11,7 @@ A function that takes a file and alphabetizes it.
 1. Import the library into your Cargo.toml like so:
     ```Rust
     [dependencies] 
-        file_alphabetizer = "2.1.2"
+        file_alphabetizer = "2.1.3"
     ```
 2. Import the crate and use the alphabetize method, like so.
     (Currently, path starts at parent directory of code calling it):
@@ -30,10 +30,6 @@ A function that takes a file and alphabetizes it.
 file_alphabetizer sorts non-case-sensitive alphabetical order.
 - Special characters such as brackets are placed after the alphabet
 - Numbers are placed before alphabet
-
-
-**As a CLI tool**
-1. Run `cargo run` from the command line, within the project's directory.
 
 # License
 

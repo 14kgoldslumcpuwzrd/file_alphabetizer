@@ -72,7 +72,7 @@ dependencies = [
 
 [[package]]
 name = "file_alphabetizer"
-version = "2.1.1"
+version = "2.1.2"
 dependencies = [
  "anyhow",
  "clap",
